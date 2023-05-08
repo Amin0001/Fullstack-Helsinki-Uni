@@ -1,0 +1,13 @@
+title 0.4 New Note
+note over Browser: Data from the form is sent to the server using HTTP POST
+Browser->Server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note 
+Server-->Browser: HTML code. 
+Browser->Server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.css
+Server-->Browser: main.css (CSS code).
+Browser->Server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.js
+Server-->Browser: main.js(javascript code)
+note over Browser: Browser uses the javascript code to reguest for the JSON data from the server.
+Browser->Server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/data.json
+Server-->Browser: [{"content":"hi how are you","date":"2023-05-08T06:57:24.029Z"},..]
+note over Browser: Browser executes the event handler that renders notes to display.
+

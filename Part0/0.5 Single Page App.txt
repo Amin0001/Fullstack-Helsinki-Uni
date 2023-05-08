@@ -1,0 +1,12 @@
+title 0.5 Single Page App
+
+Browser->Server: HTTP GET  https://studies.cs.helsinki.fi/exampleapp/spa
+Server-->Browser: HTML code
+Browser->Server:HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.css
+Server-->Browser: main.css(CSS code)
+Browser->Server:HTTP GET https://studies.cs.helsinki.fi/exampleapp/spa.js
+Server-->Browser: spa.js
+note over Browser: Browser executes the the javascript code that request JSON data from the sever
+Browser->Server:HTTP GET https://studies.cs.helsinki.fi/exampleapp/data.json
+Server-->Browser: [{"content":"biroue","date":"2023-05-07T18:23:11.775Z"},...]
+note over Browser: Browser executes the event handler that renders the note for display.

@@ -1,0 +1,12 @@
+title 0.6 New Note
+
+
+note over Browser: POST request to new_note_spa collect the new note as JSON data, the JSON data contains the content and date of the JSON data
+Browser->+Server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+Server-->-Browser: [{content: "alatech", date: "2023-05-08T06:03:17.928Z"},..]
+note Over Browser: Browser executes the Javascript code that displays the new note
+
+
+
+
+end note
